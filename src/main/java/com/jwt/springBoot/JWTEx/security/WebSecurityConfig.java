@@ -93,11 +93,11 @@ private static final String[] PUBLIC_URLS = {"/swagger-ui/**","/v3/api-docs/**",
         .authorizeHttpRequests(auth -> 
           auth
               .requestMatchers("/**").permitAll()
-              .requestMatchers("/api/auth/**").permitAll()
-              .requestMatchers("/api/test2/**").permitAll()
-              .requestMatchers("/api/test/**").permitAll()
-              .requestMatchers("/swagger-ui/**").permitAll()
-              .requestMatchers("/v3/api-docs/**").permitAll()
+//              .requestMatchers("/api/auth/**").permitAll()
+//              .requestMatchers("/api/test2/**").permitAll()
+//              .requestMatchers("/api/test/**").permitAll()
+//              .requestMatchers("/swagger-ui/**").permitAll()
+//              .requestMatchers("/v3/api-docs/**").permitAll()
 //              .requestMatchers("/api/products/productsWithImage").permitAll()
               .anyRequest().authenticated()
         );
